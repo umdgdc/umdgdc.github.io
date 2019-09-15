@@ -59,19 +59,6 @@ li {
 	
 }
 
-table {
-    
-    border-collapse: collapse;
-    width: 80%;
-	text-align: center;
-}
-
-td, th {
-    border: 1px solid black;
-    text-align: center;
-    padding: 8px;
-}
-
 button {
 	height: 80px;
 	width: 100%;
@@ -146,33 +133,6 @@ button:focus {
 	
 }
 
-.ResourceMain {
-	
-	background-color: white ;
-	color: black;
-	font-family: 'Roboto', sans-serif;
-	padding-left: 20%;
-	padding-right: 20%;
-	padding-top: 10px;
-	padding-bottom: 10%;
-	
-}
-
-.ResourceMainH2 {
-	
-	
-	padding-left: 0px;
-	
-	
-	
-}
-
-.ResourceMainP {
-	
-	padding-left: 0px;
-	/*background-color: lightgray;*/
-	
-}
 
 .miniNavbar {
 	

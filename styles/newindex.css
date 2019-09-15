@@ -1,6 +1,24 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+.myTable  {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  
+  .myTable  th, td {
+    
+    padding: 16px;
+  }
+  
+  .myTable tr:nth-child(even) {
+    background-color: #f2f2f2
+  }
+
+
 body {
 	background-color: black;
 	margin-left: 0px;
@@ -48,14 +66,11 @@ float: left;
 
 }
 
-table {    
-    border-collapse: collapse;
-    width: 80%;
-    text-align: center;
-    max-width: 800px;
-}
 
 
+.table-hover > tbody > tr:hover {
+    background-color: red
+  }
 
 td, th {
     border: 1px solid black;
@@ -86,6 +101,9 @@ td, th {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+
 
 .navbar-collapse{
 margin-top: 10px;
@@ -301,6 +319,11 @@ padding-top: 50px;
 
 .buttontest2 {
     margin-top: 100px;
+    z-index: 65;
+}
+
+.buttontest3 {
+    margin-top: 175px;
     z-index: 65;
 }
 
