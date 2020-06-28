@@ -1,3 +1,11 @@
+.wrapTitle {
+  margin:50px auto 0 auto;
+  margin-top: 10px;
+  width:100%;
+  
+  max-width:1200px;
+}
+
 .wrap
 {
   margin:50px auto 0 auto;
