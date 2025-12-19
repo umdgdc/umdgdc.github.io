@@ -1,0 +1,137 @@
+:root{
+    --blue-grey: #27272d;
+    --main-red: #BA3B21;
+    --secondary-red: #F55C21;
+    --logo-red: #E31836;
+    --header-h: 32px;
+}
+
+html, body {
+    background-color: var(--blue-grey);
+    font-family: "Press start 2P";
+    color: whitesmoke;
+    text-align: center;
+}
+
+nav {
+    top: 0;
+    background-color: black;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin-right: 3vh;
+}
+
+nav img {
+    height: var(--header-h);
+}
+
+hr {
+    color: var(--logo-red);
+    background-color: var(--logo-red);
+    width: 100%;
+    height: 4px;
+    margin: 0%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--main-red);
+    font-size: 8px;
+}
+
+footer img, .id-card a img {
+    width: 24px;
+    margin: 3px;
+    display: inline;
+    border: none;
+    border-radius: 0px;
+}
+
+#about {
+    font-size: 14px;
+}
+
+#about, #team {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+}
+
+/* .col-12.col-md-4.col-lg-3 {
+  padding-left: 0.75rem; 
+  padding-right: 0.75rem;
+  margin: auto;
+} */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* centers cards */
+    gap: 1.5rem;            /* constant horizontal & vertical spacing */
+}
+
+button {
+    background-color: var(--main-red);
+    border: 2px solid var(--secondary-red);
+    color: whitesmoke;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.col-12.col-md-4.col-lg-3 {
+    flex: 0 0 380px; /* fixed width cards */
+    max-width: 380px;
+}
+
+#hero {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    text-align: center; 
+    z-index: 10; /* above the video */
+}
+
+video {
+    filter: brightness(0.5) saturate(1.5);
+    position: fixed;     
+    top: var(--header-h);
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;    /* fills the screen without distortion */
+    z-index: -1;          /* send it behind everything */
+}
+
+.id-card {
+    /* width: 400px; */
+    /* height: 15vw; */
+    aspect-ratio: 1 / 1.2;
+    margin: auto;
+    text-align: center;
+    background-color: var(--main-red);
+    border-radius: 25px;
+}
+
+.id-card img {
+    width: 60%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center middle;
+    border: 10px solid var(--secondary-red);
+    border-radius: 50px;
+}
+
+/* #contacts hr {
+    width: auto;
+    margin: auto;
+    border: 10px solid black;
+    color: black;
+    background-color: black;
+} */
